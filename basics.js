@@ -85,3 +85,7 @@
 // fireBall(250);
 // fireBall(350);
 // fireBall(600);
+
+// getting a random number
+let num = Math.random();
+console.log(num);
