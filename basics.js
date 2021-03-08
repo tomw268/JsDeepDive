@@ -77,11 +77,11 @@
 
 // FUNCTIONS
 
-const fireBall = (pwr) => {
-  console.log(pwr + ' FireBall !!!!');
-};
+// const fireBall = (pwr) => {
+//   console.log(pwr + ' FireBall !!!!');
+// };
 
-fireBall(150);
-fireBall(250);
-fireBall(350);
-fireBall(600);
+// fireBall(150);
+// fireBall(250);
+// fireBall(350);
+// fireBall(600);
