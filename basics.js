@@ -38,27 +38,39 @@
 
 // CONDITIONALS
 
-if (5 > 6) {
-  console.log('this is true');
-} else if (5 < 6) {
-  console.log('this is true');
-} else {
-  console.log('this is false');
-}
+// if (5 > 6) {
+//   console.log('this is true');
+// } else if (5 < 6) {
+//   console.log('this is true');
+// } else {
+//   console.log('this is false');
+// }
 
-// the switch statement
+// // the switch statement
 
-const a = 3;
-switch (a) {
-  case 1:
-    console.log('A equals 1');
-    break;
-  case 2:
-    console.log('A equals 2');
-    break;
-  case 3:
-    console.log('A equals 3');
-    break;
-  default:
-    break;
+// const a = 3;
+// switch (a) {
+//   case 1:
+//     console.log('A equals 1');
+//     break;
+//   case 2:
+//     console.log('A equals 2');
+//     break;
+//   case 3:
+//     console.log('A equals 3');
+//     break;
+//   default:
+//     break;
+// }
+
+// LOOPS
+
+// let x = 0;
+// while (x <= 10) {
+//   console.log(x);
+//   x++;
+// }
+
+for (let x = 0; x <= 10; x++) {
+  console.log(x);
 }
