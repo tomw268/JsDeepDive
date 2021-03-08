@@ -27,11 +27,21 @@
 
 // BOLLean Expression
 
-let a = 5 > 6;
-console.log(a);
+// let a = 5 > 6;
+// console.log(a);
 
-// math expression
+// // math expression
 
-let b = 5 + 10;
+// let b = 5 + 10;
 
-console.log(b);
+// console.log(b);
+
+// CONDITIONALS
+
+if (5 > 6) {
+  console.log('this is true');
+} else if (5 < 6) {
+  console.log('this is true');
+} else {
+  console.log('this is false');
+}
