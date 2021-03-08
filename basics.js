@@ -8,9 +8,16 @@ var a = 1;
 a = 2;
 console.log(a);
 
-let b = 3;
-b = 4;
-console.log(b);
+// let b = 3;
+// b = 4;
+// console.log(b);
 
 const c = 1;
 console.log(c);
+
+// if statements
+
+if (true) {
+  var b = 2;
+}
+console.log(b);
