@@ -71,6 +71,17 @@
 //   x++;
 // }
 
-for (let x = 0; x <= 10; x++) {
-  console.log(x);
-}
+// for (let x = 0; x <= 10; x++) {
+//   console.log(x);
+// }
+
+// FUNCTIONS
+
+const fireBall = (pwr) => {
+  console.log(pwr + ' FireBall !!!!');
+};
+
+fireBall(150);
+fireBall(250);
+fireBall(350);
+fireBall(600);
