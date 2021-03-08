@@ -45,3 +45,20 @@ if (5 > 6) {
 } else {
   console.log('this is false');
 }
+
+// the switch statement
+
+const a = 3;
+switch (a) {
+  case 1:
+    console.log('A equals 1');
+    break;
+  case 2:
+    console.log('A equals 2');
+    break;
+  case 3:
+    console.log('A equals 3');
+    break;
+  default:
+    break;
+}
