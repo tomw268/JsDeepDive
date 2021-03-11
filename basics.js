@@ -105,9 +105,21 @@
 
 // ARRAYS
 
-const myArray = [5, 'cheese', true];
+// const myArray = [5, 'cheese', true];
 
-console.log(myArray);
-console.log(myArray[0]);
-console.log(myArray[1]);
-console.log(myArray[2]);
+// console.log(myArray);
+// console.log(myArray[0]);
+// console.log(myArray[1]);
+// console.log(myArray[2]);
+
+//// OBJECTS
+
+const myObject = {
+  name: 'Tom Walker',
+  age: 32,
+  from: 'The murder mitten',
+};
+console.log(myObject);
+console.log(myObject.name);
+console.log(myObject.age);
+console.log(myObject.from);
