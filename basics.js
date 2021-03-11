@@ -99,6 +99,15 @@
 //   counter += 1;
 // }
 
-for (let counter = 0; counter < 10; counter++) {
-  console.log(counter);
-}
+// for (let counter = 0; counter < 10; counter++) {
+//   console.log(counter);
+// }
+
+// ARRAYS
+
+const myArray = [5, 'cheese', true];
+
+console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray[2]);
