@@ -114,12 +114,20 @@
 
 //// OBJECTS
 
-const myObject = {
-  name: 'Tom Walker',
-  age: 32,
-  from: 'The murder mitten',
+// const myObject = {
+//   name: 'Tom Walker',
+//   age: 32,
+//   from: 'The murder mitten',
+// };
+// console.log(myObject);
+// console.log(myObject.name);
+// console.log(myObject.age);
+// console.log(myObject.from);
+
+/// FUNCTIONS
+
+const myFunction = (name, lastName) => {
+  console.log(name, lastName);
 };
-console.log(myObject);
-console.log(myObject.name);
-console.log(myObject.age);
-console.log(myObject.from);
+
+myFunction('Tom', 'Walker');
