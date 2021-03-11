@@ -89,3 +89,16 @@
 // // getting a random number
 // let num = Math.random();
 // console.log(num);
+
+// LOOPS
+
+// let counter = 0;
+
+// while (counter < 10) {
+//   console.log(counter);
+//   counter += 1;
+// }
+
+for (let counter = 0; counter < 10; counter++) {
+  console.log(counter);
+}
