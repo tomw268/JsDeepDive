@@ -132,5 +132,7 @@
 
 // myFunction('Tom', 'Walker');
 
-const myFunc = () => {};
-console.log(myFunc);
+const myFunc = () => {
+  return 'I was Baked';
+};
+console.log(myFunc().split('').join(' ').toLocaleUpperCase());
