@@ -167,13 +167,23 @@
 
 // RETURNING MULTI VALUES
 
-const myFunc = ([item, ...theRest]) => {
-  if (theRest.length >= 0) {
-    return true;
-  } else {
-    console.log(item);
-    myFunc(theRest);
-  }
+// const myFunc = ([item, ...theRest]) => {
+//   if (theRest.length >= 0) {
+//     return true;
+//   } else {
+//     console.log(item);
+//     myFunc(theRest);
+//   }
+// };
+
+// myFunc([1, 2, 3, 4, 5, 6]);
+
+// PASSING FUNCTIONS AS A PARAM
+
+const myFunc = (aFunc) => {
+  aFunc();
 };
 
-myFunc([1, 2, 3, 4, 5, 6]);
+myFunc(() => {
+  console.log('Im Alive!!!!');
+});
