@@ -132,7 +132,24 @@
 
 // myFunction('Tom', 'Walker');
 
-const myFunc = () => {
-  return 'I was Baked';
+// const myFunc = () => {
+//   return 'I was Baked';
+// };
+// console.log(myFunc().split('').join(' ').toLocaleUpperCase());
+
+// const myFunc = (num1, num2) => {
+//   return num1 + num2;
+// };
+
+// console.log(myFunc(10, 52));
+
+// RECURSION
+// function calls itself with a loop
+
+const myFunc = (num) => {
+  for (i = 0; i < num; i++) {
+    console.log(i);
+  }
 };
-console.log(myFunc().split('').join(' ').toLocaleUpperCase());
+
+myFunc(9);
