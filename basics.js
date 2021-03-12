@@ -126,8 +126,11 @@
 
 /// FUNCTIONS
 
-const myFunction = (name, lastName) => {
-  console.log(name, lastName);
-};
+// const myFunction = (name, lastName) => {
+//   console.log(name, lastName);
+// };
 
-myFunction('Tom', 'Walker');
+// myFunction('Tom', 'Walker');
+
+const myFunc = () => {};
+console.log(myFunc);
