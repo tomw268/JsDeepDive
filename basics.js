@@ -146,10 +146,25 @@
 // RECURSION
 // function calls itself with a loop
 
-const myFunc = (num) => {
-  for (i = 0; i < num; i++) {
-    console.log(i);
-  }
-};
+// const myFunc = (num) => {
+//   for (i = 0; i < num; i++) {
+//     console.log(i);
+//   }
+// };
 
-myFunc(9);
+// myFunc(9);
+
+// LOOPING WITH RECURSION, IF YOU WANT TO NOT CREATE A INFINATE LOOP MAKE SURE ITS CHECKING IF IT IS EQUAL TO SOMETHING
+// const myFunc = (num) => {
+//   if (num === 0) {
+//     return 0;
+//   } else {
+//     console.log(num);
+//     myFunc(num - 1);
+//   }
+// };
+// myFunc(9);
+
+// RETURNING MULTI VALUES
+
+const myFunc = (num) => {};
