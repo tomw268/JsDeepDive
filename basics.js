@@ -167,4 +167,13 @@
 
 // RETURNING MULTI VALUES
 
-const myFunc = (num) => {};
+const myFunc = ([item, ...theRest]) => {
+  if (theRest.length >= 0) {
+    return true;
+  } else {
+    console.log(item);
+    myFunc(theRest);
+  }
+};
+
+myFunc([1, 2, 3, 4, 5, 6]);
