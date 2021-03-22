@@ -180,10 +180,41 @@
 
 // PASSING FUNCTIONS AS A PARAM
 
-const myFunc = (aFunc) => {
-  aFunc();
+// const myFunc = (aFunc) => {
+//   aFunc();
+// };
+
+// myFunc(() => {
+//   console.log('Im Alive!!!!');
+// });
+
+//// FUNCTIONS AGAIN
+
+// FUNCTIONS DECLARTION
+
+// let greet = () => {
+//   console.log('Hello There');
+// };
+
+// /// FUNCTION EXPRESSION
+// const speak = function () {
+//   console.log('Good Day!');
+// };
+
+// // CALLING A FUNCTION
+// // greet();
+// // greet();
+// // greet();
+// // greet();
+// speak();
+// speak();
+// speak();
+
+/// passing values into a function
+// this name is a paramater
+const speak = (name, time) => {
+  console.log(`good ${time} ${name}`);
 };
 
-myFunc(() => {
-  console.log('Im Alive!!!!');
-});
+// this is know as an argument
+speak('Tom', 'morning');
