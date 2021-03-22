@@ -211,10 +211,21 @@
 // speak();
 
 /// passing values into a function
-// this name is a paramater
-const speak = (name, time) => {
-  console.log(`good ${time} ${name}`);
+// // this name is a paramater
+// const speak = (name, time) => {
+//   console.log(`good ${time} ${name}`);
+// };
+// const speak = (name = 'lugi', time = 'night') => {
+//   console.log(`good ${time} ${name}`);
+// };
+// // this is know as an argument
+// speak('Tom', 'morning');
+
+/// RETURNING VALUES
+
+const calcArea = (radius) => {
+  return 3.14 * radius ** 2;
 };
 
-// this is know as an argument
-speak('Tom', 'morning');
+const area = calcArea(5);
+console.log(area);
