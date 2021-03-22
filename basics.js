@@ -238,3 +238,22 @@ const calcArea = (radius) => {
 
 const area = calcArea(5);
 console.log('area is:', area);
+
+const greet = () => {
+  return 'Hello World';
+};
+
+const hello = greet();
+console.log(hello);
+
+const bill = (products, tax) => {
+  let total = 0;
+  for (let i = 0; i < products.length; i++) {
+    total += products[i] + products[i] * tax;
+  }
+  return total;
+};
+
+const cost = bill([6, 3, 4], 0.6);
+
+console.log(cost);
