@@ -232,28 +232,38 @@
 
 /// ARROW FUNCTIONS
 
-const calcArea = (radius) => {
-  return 3.14 * radius ** 2;
-};
+// const calcArea = (radius) => {
+//   return 3.14 * radius ** 2;
+// };
 
-const area = calcArea(5);
-console.log('area is:', area);
+// const area = calcArea(5);
+// console.log('area is:', area);
 
-const greet = () => {
-  return 'Hello World';
-};
+// const greet = () => {
+//   return 'Hello World';
+// };
 
-const hello = greet();
-console.log(hello);
+// const hello = greet();
+// console.log(hello);
 
-const bill = (products, tax) => {
-  let total = 0;
-  for (let i = 0; i < products.length; i++) {
-    total += products[i] + products[i] * tax;
-  }
-  return total;
-};
+// const bill = (products, tax) => {
+//   let total = 0;
+//   for (let i = 0; i < products.length; i++) {
+//     total += products[i] + products[i] * tax;
+//   }
+//   return total;
+// };
 
-const cost = bill([6, 3, 4], 0.6);
+// const cost = bill([6, 3, 4], 0.6);
 
-console.log(cost);
+// console.log(cost);
+
+///FUNCTIONS
+const greet = () => 'hello';
+let resultOne = greet();
+console.log(resultOne);
+/// METHODS
+
+const name = 'Tom';
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
