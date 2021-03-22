@@ -259,11 +259,28 @@
 // console.log(cost);
 
 ///FUNCTIONS
-const greet = () => 'hello';
-let resultOne = greet();
-console.log(resultOne);
-/// METHODS
+// const greet = () => 'hello';
+// let resultOne = greet();
+// console.log(resultOne);
 
-const name = 'Tom';
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+// /// METHODS
+
+// const name = 'Tom';
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
+
+// CALLBACKS AND FOREACH
+// const myFunc = (callbackFunc) => {
+//   let value = 50;
+//   callbackFunc(value);
+// };
+// myFunc(value=>{
+//   console.log(value);
+// });
+
+let people = ['tom', 'matt', 'kait', 'mer', 'ryan', 'cassie'];
+// foreach iterates over an array
+const logPerson = (person, index) => {
+  console.log(`${index} Hello ${person}`);
+};
+people.forEach(logPerson);
