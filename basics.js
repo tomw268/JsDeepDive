@@ -302,23 +302,51 @@
 // JAVASCRIPT CORE BASICS AGAIN LOL
 //CHAPTER 2
 
-// template strings
-const title = 'Best reads of 2020';
-const author = 'Tom';
-const likes = 30;
-// concatenation
+// // template strings
+// const title = 'Best reads of 2020';
+// const author = 'Tom';
+// const likes = 30;
+// // concatenation
 
-let result =
-  'The Blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
-console.log(result);
-// template string way or template literal
-let result2 = `The Blog called ${title} by ${author} has ${likes} likes!`;
-console.log(result2);
-// creating html templates
+// let result =
+//   'The Blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+// console.log(result);
+// // template string way or template literal
+// let result2 = `The Blog called ${title} by ${author} has ${likes} likes!`;
+// console.log(result2);
+// // creating html templates
 
-let html = `
-<h2>${title}</h2>
-<p>${author}</p>
-<span>This blog has ${likes} likes</span>`;
+// let html = `
+// <h2>${title}</h2>
+// <p>${author}</p>
+// <span>This blog has ${likes} likes</span>`;
 
-console.log(html);
+// console.log(html);
+
+/// ARRAYS
+
+let ninjas = ['Tom', 'Ryu', 'Chun-li'];
+
+// console.log(ninjas);
+
+// console.log(ninjas[1]);
+
+// ninjas[1] = 'Ken';
+// console.log(ninjas[1]);
+
+// let ages = [25.3, 35, 55];
+// console.log(ages[2]);
+
+// let random = ['tom', 'sean', 30, 20];
+// console.log(random);
+
+// console.log(ninjas.length);
+
+// ARRAY METHODS
+//let result = ninjas.join('-');
+
+//let result = ninjas.indexOf('Ryu');
+//let result = ninjas.concat(['Bill', 'Ryan']);
+let result = ninjas.push('Ken');
+result = ninjas.pop();
+console.log(ninjas);
