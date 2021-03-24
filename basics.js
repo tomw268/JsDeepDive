@@ -287,14 +287,38 @@
 
 // GET A REF TO THE 'UL'
 
-const ul = document.querySelector('.people');
-let people = ['tom', 'matt', 'kait', 'mer', 'ryan', 'cassie'];
+// const ul = document.querySelector('.people');
+// let people = ['tom', 'matt', 'kait', 'mer', 'ryan', 'cassie'];
 
-let html = ``;
+// let html = ``;
 
-people.forEach((person) => {
-  // CREATE HTML TEMPLATE FOR EACH PERSON
-  html += `<li style='color: purple'>${person}</li>`;
-});
+// people.forEach((person) => {
+//   // CREATE HTML TEMPLATE FOR EACH PERSON
+//   html += `<li style='color: purple'>${person}</li>`;
+// });
 
-ul.innerHTML = html;
+// ul.innerHTML = html;
+
+// JAVASCRIPT CORE BASICS AGAIN LOL
+//CHAPTER 2
+
+// template strings
+const title = 'Best reads of 2020';
+const author = 'Tom';
+const likes = 30;
+// concatenation
+
+let result =
+  'The Blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+console.log(result);
+// template string way or template literal
+let result2 = `The Blog called ${title} by ${author} has ${likes} likes!`;
+console.log(result2);
+// creating html templates
+
+let html = `
+<h2>${title}</h2>
+<p>${author}</p>
+<span>This blog has ${likes} likes</span>`;
+
+console.log(html);
