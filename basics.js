@@ -284,3 +284,17 @@
 //   console.log(`${index} Hello ${person}`);
 // };
 // people.forEach(logPerson);
+
+// GET A REF TO THE 'UL'
+
+const ul = document.querySelector('.people');
+let people = ['tom', 'matt', 'kait', 'mer', 'ryan', 'cassie'];
+
+let html = ``;
+
+people.forEach((person) => {
+  // CREATE HTML TEMPLATE FOR EACH PERSON
+  html += `<li style='color: purple'>${person}</li>`;
+});
+
+ul.innerHTML = html;
