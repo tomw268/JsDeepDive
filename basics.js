@@ -278,9 +278,9 @@
 //   console.log(value);
 // });
 
-let people = ['tom', 'matt', 'kait', 'mer', 'ryan', 'cassie'];
-// foreach iterates over an array
-const logPerson = (person, index) => {
-  console.log(`${index} Hello ${person}`);
-};
-people.forEach(logPerson);
+// let people = ['tom', 'matt', 'kait', 'mer', 'ryan', 'cassie'];
+// // foreach iterates over an array
+// const logPerson = (person, index) => {
+//   console.log(`${index} Hello ${person}`);
+// };
+// people.forEach(logPerson);
