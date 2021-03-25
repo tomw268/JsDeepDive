@@ -353,5 +353,28 @@ let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 
 /// NULL AND UNDEFINED
 
-let age = null;
-console.log(age, age + 3, `the age is ${age}`);
+// let age = null;
+// console.log(age, age + 3, `the age is ${age}`);
+
+// BOOLEANS AND COMPARISONS
+// console.log(true, false, 'true', 'flase');
+// METHODS CAN RETURN BOOLEANS
+
+let email = 'tonw268@gmail.com';
+let names = ['tom', 'mario', 'toad'];
+
+// let result = email.includes('@');
+
+// let result1 = names.includes('mario');
+// console.log(result1);
+
+// console.log(result);
+
+// COMPARISON OPERATORS
+
+let age = 25;
+
+console.log(age == 25);
+console.log(age == 30);
+console.log(age != 30);
+console.log(age > 20);
