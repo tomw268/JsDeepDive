@@ -347,6 +347,11 @@ let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 
 //let result = ninjas.indexOf('Ryu');
 //let result = ninjas.concat(['Bill', 'Ryan']);
-let result = ninjas.push('Ken');
-result = ninjas.pop();
-console.log(ninjas);
+// let result = ninjas.push('Ken');
+// result = ninjas.pop();
+// console.log(ninjas);
+
+/// NULL AND UNDEFINED
+
+let age = null;
+console.log(age, age + 3, `the age is ${age}`);
