@@ -360,8 +360,8 @@ let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 // console.log(true, false, 'true', 'flase');
 // METHODS CAN RETURN BOOLEANS
 
-let email = 'tonw268@gmail.com';
-let names = ['tom', 'mario', 'toad'];
+// let email = 'tonw268@gmail.com';
+// let names = ['tom', 'mario', 'toad'];
 
 // let result = email.includes('@');
 
@@ -372,9 +372,27 @@ let names = ['tom', 'mario', 'toad'];
 
 // COMPARISON OPERATORS
 
-let age = 25;
+// let age = 25;
 
-console.log(age == 25);
-console.log(age == 30);
-console.log(age != 30);
-console.log(age > 20);
+// console.log(age == 25);
+// console.log(age == 30);
+// console.log(age != 30);
+// console.log(age > 20);
+
+/// SECTION 3 CONTROL FLOW
+
+// FOR LOOPS
+
+// for (let i = 0; i < 5; i++) {
+//   console.log('in loop', i);
+// }
+
+// console.log('loop finished');
+
+const names = ['tom', 'matt', 'kaitlynn', 'mer', 'tony'];
+
+for (let i = 0; i < names.length; i++) {
+  //console.log(names[i]);
+  let html = `<div>${names[i]}</div>`;
+  console.log(html);
+}
