@@ -398,15 +398,22 @@ let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 // }
 
 /// WHILE LOOPS
-const names = ['tom', 'mario', 'lugi'];
+// const names = ['tom', 'mario', 'lugi'];
+// // let i = 0;
+// // while (i < 5) {
+// //   console.log('in loop:', i);
+// //   i++;
+// // }
+
 // let i = 0;
-// while (i < 5) {
-//   console.log('in loop:', i);
+// while (i < names.length) {
+//   console.log(names[i]);
 //   i++;
 // }
 
-let i = 0;
-while (i < names.length) {
-  console.log(names[i]);
+// DO WHILE LOOPS
+let i = 2;
+do {
+  console.log('val of i is', i);
   i++;
-}
+} while (i < 5);
