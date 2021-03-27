@@ -389,10 +389,24 @@ let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 
 // console.log('loop finished');
 
-const names = ['tom', 'matt', 'kaitlynn', 'mer', 'tony'];
+// const names = ['tom', 'matt', 'kaitlynn', 'mer', 'tony'];
 
-for (let i = 0; i < names.length; i++) {
-  //console.log(names[i]);
-  let html = `<div>${names[i]}</div>`;
-  console.log(html);
+// for (let i = 0; i < names.length; i++) {
+//   //console.log(names[i]);
+//   let html = `<div>${names[i]}</div>`;
+//   console.log(html);
+// }
+
+/// WHILE LOOPS
+const names = ['tom', 'mario', 'lugi'];
+// let i = 0;
+// while (i < 5) {
+//   console.log('in loop:', i);
+//   i++;
+// }
+
+let i = 0;
+while (i < names.length) {
+  console.log(names[i]);
+  i++;
 }
