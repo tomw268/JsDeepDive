@@ -325,7 +325,7 @@
 
 /// ARRAYS
 
-let ninjas = ['Tom', 'Ryu', 'Chun-li'];
+// let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 
 // console.log(ninjas);
 
@@ -412,8 +412,27 @@ let ninjas = ['Tom', 'Ryu', 'Chun-li'];
 // }
 
 // DO WHILE LOOPS
-let i = 2;
-do {
-  console.log('val of i is', i);
-  i++;
-} while (i < 5);
+// let i = 2;
+// do {
+//   console.log('val of i is', i);
+//   i++;
+// } while (i < 5);
+
+// IF STATEMENT
+
+// const age = 25;
+// if (age > 20) {
+//   console.log('You are over 20 years old');
+// }
+
+// const ninjas = ['tom', 'sean', 'ryu', 'mario'];
+
+// if (ninjas.length > 3) {
+//   console.log('You have 4 ninjas');
+// }
+
+const password = 'p@ssword';
+
+if (password.length >= 8) {
+  console.log('that password is long enough');
+}
