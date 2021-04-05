@@ -526,9 +526,18 @@
 
 // ARGUMENTS & PARAMETERS
 
-const speak = function (name = 'Billy', time = 'night') {
-  console.log(`good ${time} ${name}`);
+// const speak = function (name = 'Billy', time = 'night') {
+//   console.log(`good ${time} ${name}`);
+// };
+
+// speak();
+// speak('Tom', 'Afternoon');
+
+// RETURNING VALUES
+const calcArea = function (radius) {
+  let area = 3.14 * radius ** 2;
+  return area;
 };
 
-speak();
-speak('Tom', 'Afternoon');
+const area = calcArea(5);
+console.log(area);
