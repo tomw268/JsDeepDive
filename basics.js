@@ -544,10 +544,22 @@
 
 // ARROW FUNCTIONS
 
-let calcArea = (radius) => {
-  return 3.14 * radius ** 2;
-};
+// let calcArea = (radius) => {
+//   return 3.14 * radius ** 2;
+// };
 
-let area = calcArea(5);
+// let area = calcArea(5);
 
-console.log(` the area is ${area}`);
+// console.log(` the area is ${area}`);
+
+// FUNCTIONS VS METHODS
+const name = 'Tom';
+// FUNCTIONS
+const greet = () => 'Hello';
+
+let resultOne = greet();
+console.log(resultOne);
+// METHODS
+
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
