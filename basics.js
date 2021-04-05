@@ -566,8 +566,21 @@
 
 // FOREACH METHOD AND CALLBACKS
 
-const myFunc = (callbackFunc) => {
-  // do something
-  let value = 50;
-  callbackFunc(value);
+// const myFunc = (callbackFunc) => {
+//   // do something
+//   let value = 50;
+//   callbackFunc(value);
+// };
+
+// myFunc((value) => {
+//   // do something
+//   console.log(value);
+// });
+
+let people = ['tom', 'matt', 'kait', 'mer', 'jay', 'em'];
+
+const logPerson = (person, index) => {
+  console.log(`${index}- hello ${person}`);
 };
+
+people.forEach(logPerson);
