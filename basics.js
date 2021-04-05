@@ -553,13 +553,21 @@
 // console.log(` the area is ${area}`);
 
 // FUNCTIONS VS METHODS
-const name = 'Tom';
-// FUNCTIONS
-const greet = () => 'Hello';
+// const name = 'Tom';
+// // FUNCTIONS
+// const greet = () => 'Hello';
 
-let resultOne = greet();
-console.log(resultOne);
-// METHODS
+// let resultOne = greet();
+// console.log(resultOne);
+// // METHODS
 
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
+
+// FOREACH METHOD AND CALLBACKS
+
+const myFunc = (callbackFunc) => {
+  // do something
+  let value = 50;
+  callbackFunc(value);
+};
