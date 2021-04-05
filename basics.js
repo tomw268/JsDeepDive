@@ -509,17 +509,26 @@
 // FUNCTION DECLARATIONS & EXPRESSIONS
 // FIUNCTION DECLARATION
 
-function greet() {
-  console.log('hello there');
-}
-greet();
-greet();
-greet();
+// function greet() {
+//   console.log('hello there');
+// }
+// greet();
+// greet();
+// greet();
 
-/// FUNCTION EXPRESSION
+// /// FUNCTION EXPRESSION
 
-const speak = function () {
-  console.log('GDay');
+// const speak = function () {
+//   console.log('GDay');
+// };
+
+// speak();
+
+// ARGUMENTS & PARAMETERS
+
+const speak = function (name = 'Billy', time = 'night') {
+  console.log(`good ${time} ${name}`);
 };
 
 speak();
+speak('Tom', 'Afternoon');
