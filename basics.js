@@ -461,7 +461,23 @@
 
 // LOGICAL NOT (!)
 
-let user = false;
-if (!user) {
-  console.log('User is not logged in!!');
+// let user = false;
+// if (!user) {
+//   console.log('User is not logged in!!');
+// }
+
+// BREAK & CONTINUE
+
+const scores = [50, 90, 0, 25, 100, 30];
+
+for (let i = 0; i < scores.length; i++) {
+  if (scores[i] == 0) {
+    continue;
+  }
+  console.log('your score: ', scores[i]);
+
+  if (scores[i] === 100) {
+    console.log('Congrats on the top score');
+    break;
+  }
 }
