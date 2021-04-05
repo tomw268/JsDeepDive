@@ -577,10 +577,23 @@
 //   console.log(value);
 // });
 
-let people = ['tom', 'matt', 'kait', 'mer', 'jay', 'em'];
+// let people = ['tom', 'matt', 'kait', 'mer', 'jay', 'em'];
 
-const logPerson = (person, index) => {
-  console.log(`${index}- hello ${person}`);
-};
+// const logPerson = (person, index) => {
+//   console.log(`${index}- hello ${person}`);
+// };
 
-people.forEach(logPerson);
+// people.forEach(logPerson);
+
+// CALLBACK FUNCTIONS IN ACTION
+const ul = document.querySelector('.people');
+const people = ['tom', 'matt', 'kait', 'mer', 'jay', 'em'];
+
+let html = ``;
+
+people.forEach((person) => {
+  // create html template
+  html += `<li style='color:purple'>${person}</li>`;
+});
+
+ul.innerHTML = html;
