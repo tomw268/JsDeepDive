@@ -468,16 +468,38 @@
 
 // BREAK & CONTINUE
 
-const scores = [50, 90, 0, 25, 100, 30];
+// const scores = [50, 90, 0, 25, 100, 30];
 
-for (let i = 0; i < scores.length; i++) {
-  if (scores[i] == 0) {
-    continue;
-  }
-  console.log('your score: ', scores[i]);
+// for (let i = 0; i < scores.length; i++) {
+//   if (scores[i] == 0) {
+//     continue;
+//   }
+//   console.log('your score: ', scores[i]);
 
-  if (scores[i] === 100) {
-    console.log('Congrats on the top score');
+//   if (scores[i] === 100) {
+//     console.log('Congrats on the top score');
+//     break;
+//   }
+// }
+
+// SWITCH STATEMENTS
+const grade = 'D';
+switch (grade) {
+  case 'A':
+    console.log('You got and A!');
     break;
-  }
+  case 'B':
+    console.log('You got and B!');
+    break;
+  case 'C':
+    console.log('You got and C!');
+    break;
+  case 'D':
+    console.log('You got and D!');
+    break;
+  case 'E':
+    console.log('You got and E!');
+    break;
+  default:
+    console.log('Not a valid grade');
 }
