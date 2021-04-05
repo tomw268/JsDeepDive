@@ -586,14 +586,30 @@
 // people.forEach(logPerson);
 
 // CALLBACK FUNCTIONS IN ACTION
-const ul = document.querySelector('.people');
-const people = ['tom', 'matt', 'kait', 'mer', 'jay', 'em'];
+// const ul = document.querySelector('.people');
+// const people = ['tom', 'matt', 'kait', 'mer', 'jay', 'em'];
 
-let html = ``;
+// let html = ``;
 
-people.forEach((person) => {
-  // create html template
-  html += `<li style='color:purple'>${person}</li>`;
-});
+// people.forEach((person) => {
+//   // create html template
+//   html += `<li style='color:purple'>${person}</li>`;
+// });
 
-ul.innerHTML = html;
+// ul.innerHTML = html;
+
+// OBJECT LITERALS
+
+// CREATING OBJECT LITERALS
+
+let user = {
+  name: 'Tom',
+  age: 32,
+  email: 'tomw268@gmail.com',
+  location: 'MI',
+  blogs: ['why mac & cheese rules', '10 things to make with vegimite'],
+};
+
+console.log(user.email);
+
+console.log(user['name']);
