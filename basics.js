@@ -534,10 +534,20 @@
 // speak('Tom', 'Afternoon');
 
 // RETURNING VALUES
-const calcArea = function (radius) {
-  let area = 3.14 * radius ** 2;
-  return area;
+// const calcArea = function (radius) {
+//   let area = 3.14 * radius ** 2;
+//   return area;
+// };
+
+// const area = calcArea(5);
+// console.log(area);
+
+// ARROW FUNCTIONS
+
+let calcArea = (radius) => {
+  return 3.14 * radius ** 2;
 };
 
-const area = calcArea(5);
-console.log(area);
+let area = calcArea(5);
+
+console.log(` the area is ${area}`);
