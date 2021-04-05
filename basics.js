@@ -450,11 +450,18 @@
 
 // LOGICAL OPERATORS - OR || AND &&
 
-const password = 'password';
-if (password.length >= 12 && password.includes('@')) {
-  console.log('that password is mighty strong');
-} else if (password.length >= 8 || password.includes('@')) {
-  console.log('that password is strong enough');
-} else {
-  console.log('Your password is not strong enough');
+// const password = 'password';
+// if (password.length >= 12 && password.includes('@')) {
+//   console.log('that password is mighty strong');
+// } else if (password.length >= 8 || password.includes('@')) {
+//   console.log('that password is strong enough');
+// } else {
+//   console.log('Your password is not strong enough');
+// }
+
+// LOGICAL NOT (!)
+
+let user = false;
+if (!user) {
+  console.log('User is not logged in!!');
 }
