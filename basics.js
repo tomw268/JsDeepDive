@@ -763,21 +763,36 @@
 
 // ADDING AND CHANGING PAGE CONTENT
 
-const firstP = document.querySelector('p');
-// firstP.innerText = 'Hello World, My Name is Tom Walker';
+// const firstP = document.querySelector('p');
+// // firstP.innerText = 'Hello World, My Name is Tom Walker';
 
-const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-// paras.forEach((para) => {
-//   para.innerText += ' new Text';
+// // paras.forEach((para) => {
+// //   para.innerText += ' new Text';
+// // });
+// const content = document.querySelector('.content');
+
+// //console.log(content.innerHTML);
+// //content.innerHTML = '<h2>This is a new H2 </h2>';
+
+// const people = ['tom', 'kait', 'mario'];
+
+// people.forEach((person) => {
+//   content.innerHTML += `<p>${person}</p>`;
 // });
-const content = document.querySelector('.content');
 
-//console.log(content.innerHTML);
-//content.innerHTML = '<h2>This is a new H2 </h2>';
+// GETTING & SETTING ATTRIBUTES
 
-const people = ['tom', 'kait', 'mario'];
+const link = document.querySelector('a');
 
-people.forEach((person) => {
-  content.innerHTML += `<p>${person}</p>`;
-});
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.espn.com');
+link.innerText = 'ESPN the Leader in Sports';
+
+const msg = document.querySelector('p');
+
+console.log(msg.getAttribute('class'));
+
+msg.setAttribute('class', 'success');
+msg.setAttribute('style', 'color: green');
