@@ -747,16 +747,37 @@
 // OTHER WAYS TO QUERY THE DOM
 // GET ELEMENT BY ID
 
-const title = document.getElementById('page-title');
-console.log(title);
+// const title = document.getElementById('page-title');
+// console.log(title);
 
-// GET ELEMENTS BY CLASS NAME
+// // GET ELEMENTS BY CLASS NAME
 
-const errors = document.getElementsByClassName('error');
-console.log(errors);
+// const errors = document.getElementsByClassName('error');
+// console.log(errors);
 
-// GET ELEMENTS BY TAG NAME
+// // GET ELEMENTS BY TAG NAME
 
-const paras = document.getElementsByTagName('p');
-console.log(paras);
-console.log(paras[2]);
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+// console.log(paras[2]);
+
+// ADDING AND CHANGING PAGE CONTENT
+
+const firstP = document.querySelector('p');
+// firstP.innerText = 'Hello World, My Name is Tom Walker';
+
+const paras = document.querySelectorAll('p');
+
+// paras.forEach((para) => {
+//   para.innerText += ' new Text';
+// });
+const content = document.querySelector('.content');
+
+//console.log(content.innerHTML);
+//content.innerHTML = '<h2>This is a new H2 </h2>';
+
+const people = ['tom', 'kait', 'mario'];
+
+people.forEach((person) => {
+  content.innerHTML += `<p>${person}</p>`;
+});
