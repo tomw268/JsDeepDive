@@ -706,22 +706,40 @@
 // user.logout();
 // user.logBlog();
 
-// THE MATH OBJECT
+// // THE MATH OBJECT
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-const area = 7.7;
+// const area = 7.7;
 
-console.log(Math.round(area));
-console.log(Math.floor(area));
-console.log(Math.ceil(area));
-console.log(Math.trunc(area));
+// console.log(Math.round(area));
+// console.log(Math.floor(area));
+// console.log(Math.ceil(area));
+// console.log(Math.trunc(area));
 
-// GENERATE RANDOM NUMBERS
+// // GENERATE RANDOM NUMBERS
 
-const random = Math.random();
-console.log(random);
+// const random = Math.random();
+// console.log(random);
 
-console.log(Math.round(random * 100));
+// console.log(Math.round(random * 100));
+
+//// THE DOM !!!!
+// THE QUERY SELECTOR
+
+// const para = document.querySelector('p');
+// console.log(para);
+
+// const paraError = document.querySelector('.error');
+// console.log(paraError);
+
+const allP = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
+
+allP.forEach((para) => {
+  console.log(para);
+});
+
+console.log(errors);
