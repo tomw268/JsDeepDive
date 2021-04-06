@@ -784,15 +784,32 @@
 
 // GETTING & SETTING ATTRIBUTES
 
-const link = document.querySelector('a');
+// const link = document.querySelector('a');
 
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.espn.com');
-link.innerText = 'ESPN the Leader in Sports';
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.espn.com');
+// link.innerText = 'ESPN the Leader in Sports';
 
-const msg = document.querySelector('p');
+// const msg = document.querySelector('p');
 
-console.log(msg.getAttribute('class'));
+// console.log(msg.getAttribute('class'));
 
-msg.setAttribute('class', 'success');
-msg.setAttribute('style', 'color: green');
+// msg.setAttribute('class', 'success');
+// msg.setAttribute('style', 'color: green');
+
+// CHANGING CSS STYLES
+
+const title = document.querySelector('h1');
+
+//title.setAttribute('style', 'margin: 50px');
+console.log(title.style);
+
+console.log(title.style.color);
+
+title.style.margin = '50px';
+
+title.style.color = 'crimson';
+
+title.style.fontSize = '50px';
+
+title.style.margin = '';
