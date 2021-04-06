@@ -615,6 +615,27 @@
 // console.log(user['name']);
 
 // ADDING METHODS
+// let user = {
+//   name: 'Tom',
+//   age: 32,
+//   email: 'tomw268@gmail.com',
+//   location: 'MI',
+//   blogs: ['why mac & cheese rules', '10 things to make with vegimite'],
+//   login: function () {
+//     console.log('the user logged in');
+//   },
+//   logout: function () {
+//     console.log('the user logged out');
+//   },
+//   logBlog: function(){
+//     console.log
+//   }
+// };
+
+// user.login();
+// user.logout();
+
+// THIS KEYWORD
 let user = {
   name: 'Tom',
   age: 32,
@@ -627,7 +648,15 @@ let user = {
   logout: function () {
     console.log('the user logged out');
   },
+  logBlog: function () {
+    //console.log(this.blogs);
+    console.log('this user has written the following blogs:');
+    this.blogs.forEach((blog) => {
+      console.log(blog);
+    });
+  },
 };
 
 user.login();
 user.logout();
+user.logBlog();
