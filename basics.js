@@ -636,23 +636,68 @@
 // user.logout();
 
 // THIS KEYWORD
+// let user = {
+//   name: 'Tom',
+//   age: 32,
+//   email: 'tomw268@gmail.com',
+//   location: 'MI',
+//   blogs: ['why mac & cheese rules', '10 things to make with vegimite'],
+//   login() {
+//     console.log('the user logged in');
+//   },
+//   logout() {
+//     console.log('the user logged out');
+//   },
+//   logBlog() {
+//     //console.log(this.blogs);
+//     console.log('this user has written the following blogs:');
+//     this.blogs.forEach((blog) => {
+//       console.log(blog);
+//     });
+//   },
+// };
+
+// user.login();
+// user.logout();
+// user.logBlog();
+
+// OBJECTS IN ARRAYS
+// const blogs = [
+//   {
+//     title: 'Why mac & cheese rules',
+//     likes: 30,
+//   },
+//   {
+//     title: '10 things to make with vegimite',
+//     likes: 50,
+//   },
+// ];
 let user = {
   name: 'Tom',
   age: 32,
   email: 'tomw268@gmail.com',
   location: 'MI',
-  blogs: ['why mac & cheese rules', '10 things to make with vegimite'],
-  login: function () {
+  blogs: [
+    {
+      title: 'Why mac & cheese rules',
+      likes: 30,
+    },
+    {
+      title: '10 things to make with vegimite',
+      likes: 50,
+    },
+  ],
+  login() {
     console.log('the user logged in');
   },
-  logout: function () {
+  logout() {
     console.log('the user logged out');
   },
-  logBlog: function () {
+  logBlog() {
     //console.log(this.blogs);
     console.log('this user has written the following blogs:');
     this.blogs.forEach((blog) => {
-      console.log(blog);
+      console.log(blog.title, blog.likes);
     });
   },
 };
