@@ -672,36 +672,56 @@
 //     likes: 50,
 //   },
 // ];
-let user = {
-  name: 'Tom',
-  age: 32,
-  email: 'tomw268@gmail.com',
-  location: 'MI',
-  blogs: [
-    {
-      title: 'Why mac & cheese rules',
-      likes: 30,
-    },
-    {
-      title: '10 things to make with vegimite',
-      likes: 50,
-    },
-  ],
-  login() {
-    console.log('the user logged in');
-  },
-  logout() {
-    console.log('the user logged out');
-  },
-  logBlog() {
-    //console.log(this.blogs);
-    console.log('this user has written the following blogs:');
-    this.blogs.forEach((blog) => {
-      console.log(blog.title, blog.likes);
-    });
-  },
-};
+// let user = {
+//   name: 'Tom',
+//   age: 32,
+//   email: 'tomw268@gmail.com',
+//   location: 'MI',
+//   blogs: [
+//     {
+//       title: 'Why mac & cheese rules',
+//       likes: 30,
+//     },
+//     {
+//       title: '10 things to make with vegimite',
+//       likes: 50,
+//     },
+//   ],
+//   login() {
+//     console.log('the user logged in');
+//   },
+//   logout() {
+//     console.log('the user logged out');
+//   },
+//   logBlog() {
+//     //console.log(this.blogs);
+//     console.log('this user has written the following blogs:');
+//     this.blogs.forEach((blog) => {
+//       console.log(blog.title, blog.likes);
+//     });
+//   },
+// };
 
-user.login();
-user.logout();
-user.logBlog();
+// user.login();
+// user.logout();
+// user.logBlog();
+
+// THE MATH OBJECT
+
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+
+const area = 7.7;
+
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
+
+// GENERATE RANDOM NUMBERS
+
+const random = Math.random();
+console.log(random);
+
+console.log(Math.round(random * 100));
