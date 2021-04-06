@@ -735,11 +735,28 @@
 // const paraError = document.querySelector('.error');
 // console.log(paraError);
 
-const allP = document.querySelectorAll('p');
-const errors = document.querySelectorAll('.error');
+// const allP = document.querySelectorAll('p');
+// const errors = document.querySelectorAll('.error');
 
-allP.forEach((para) => {
-  console.log(para);
-});
+// allP.forEach((para) => {
+//   console.log(para);
+// });
 
+// console.log(errors);
+
+// OTHER WAYS TO QUERY THE DOM
+// GET ELEMENT BY ID
+
+const title = document.getElementById('page-title');
+console.log(title);
+
+// GET ELEMENTS BY CLASS NAME
+
+const errors = document.getElementsByClassName('error');
 console.log(errors);
+
+// GET ELEMENTS BY TAG NAME
+
+const paras = document.getElementsByTagName('p');
+console.log(paras);
+console.log(paras[2]);
