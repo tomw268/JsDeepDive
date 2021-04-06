@@ -602,14 +602,32 @@
 
 // CREATING OBJECT LITERALS
 
+// let user = {
+//   name: 'Tom',
+//   age: 32,
+//   email: 'tomw268@gmail.com',
+//   location: 'MI',
+//   blogs: ['why mac & cheese rules', '10 things to make with vegimite'],
+// };
+
+// console.log(user.email);
+
+// console.log(user['name']);
+
+// ADDING METHODS
 let user = {
   name: 'Tom',
   age: 32,
   email: 'tomw268@gmail.com',
   location: 'MI',
   blogs: ['why mac & cheese rules', '10 things to make with vegimite'],
+  login: function () {
+    console.log('the user logged in');
+  },
+  logout: function () {
+    console.log('the user logged out');
+  },
 };
 
-console.log(user.email);
-
-console.log(user['name']);
+user.login();
+user.logout();
