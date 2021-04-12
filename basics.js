@@ -879,10 +879,29 @@
 // });
 
 // CREATING & REMOVING ELEMENTS FROM THE DOM
+// const ul = document.querySelector('ul');
+// //ul.remove();
+// const button = document.querySelector('button');
+// const items = document.querySelectorAll('li');
+
+// button.addEventListener('click', () => {
+//   const li = document.createElement('li');
+//   li.textContent = 'Something New ToDo';
+//   //ul.append(li);
+//   ul.prepend(li);
+// });
+
+// items.forEach((item) => {
+//   item.addEventListener('click', (e) => {
+//     //e.target.style.textDecoration = 'line-through';
+//     e.target.remove();
+//   });
+// });
+
+// EVENT BUBBLING (AND DELEGATION)
 const ul = document.querySelector('ul');
 //ul.remove();
 const button = document.querySelector('button');
-const items = document.querySelectorAll('li');
 
 button.addEventListener('click', () => {
   const li = document.createElement('li');
@@ -891,9 +910,20 @@ button.addEventListener('click', () => {
   ul.prepend(li);
 });
 
-items.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    //e.target.style.textDecoration = 'line-through';
+// const items = document.querySelectorAll('li');
+// items.forEach((item) => {
+//   item.addEventListener('click', (e) => {
+//     //e.target.style.textDecoration = 'line-through';
+//     console.log('event in li');
+//     e.stopPropagation();
+//     e.target.remove();
+//   });
+// });
+
+ul.addEventListener('click', (e) => {
+  //console.log('event in UL');
+  // console.log(e);
+  if (e.target.tagName === 'LI') {
     e.target.remove();
-  });
+  }
 });
