@@ -930,20 +930,22 @@
 
 // MORE DOM EVENTS
 
-const copy = document.querySelector('.copy-me');
+// const copy = document.querySelector('.copy-me');
 
-copy.addEventListener('copy', () => {
-  console.log('OI my content is copy right');
-});
+// copy.addEventListener('copy', () => {
+//   console.log('OI my content is copy right');
+// });
 
-const mouseMove = document.querySelector('.box');
+// const mouseMove = document.querySelector('.box');
 
-mouseMove.addEventListener('mousemove', (e) => {
-  //console.log(e);
-  //console.log(e.offsetX, e.offsetY);
-  mouseMove.textContent = `x pos -${e.offsetX} y pos - ${e.offsetY}`;
-});
+// mouseMove.addEventListener('mousemove', (e) => {
+//   //console.log(e);
+//   //console.log(e.offsetX, e.offsetY);
+//   mouseMove.textContent = `x pos -${e.offsetX} y pos - ${e.offsetY}`;
+// });
 
-document.addEventListener('wheel', (e) => {
-  console.log(e.pageX, e.pageY);
-});
+// document.addEventListener('wheel', (e) => {
+//   console.log(e.pageX, e.pageY);
+// });
+
+// BUILD A POP UP
