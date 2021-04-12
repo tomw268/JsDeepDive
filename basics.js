@@ -840,21 +840,40 @@
 
 /// PARENTS, CHILDREN & SIBLINGS
 
-const article = document.querySelector('article');
+// const article = document.querySelector('article');
 
-// console.log(article.children);
+// // console.log(article.children);
 
-// console.log(Array.from(article.children));
-// Array.from(article.children).forEach((child) => {
-//   child.classList.add('article-element');
+// // console.log(Array.from(article.children));
+// // Array.from(article.children).forEach((child) => {
+// //   child.classList.add('article-element');
+// // });
+
+// const title = document.querySelector('h2');
+// console.log(title.parentElement);
+// console.log(title.parentElement.parentElement);
+// console.log(title.nextElementSibling);
+// console.log(title.previousElementSibling);
+
+// // chaining
+
+// console.log(title.nextElementSibling.parentElement.children);
+
+// EVENT BASICS (CLICK EVENTS)
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+//   console.log('You clicked me');
 // });
 
-const title = document.querySelector('h2');
-console.log(title.parentElement);
-console.log(title.parentElement.parentElement);
-console.log(title.nextElementSibling);
-console.log(title.previousElementSibling);
+const items = document.querySelectorAll('li');
 
-// chaining
-
-console.log(title.nextElementSibling.parentElement.children);
+items.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    //console.log('item clicked');
+    //console.log(e);
+    //console.log(e.target);
+    e.target.style.textDecoration = 'line-through';
+  });
+});
