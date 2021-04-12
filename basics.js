@@ -867,13 +867,33 @@
 //   console.log('You clicked me');
 // });
 
+// const items = document.querySelectorAll('li');
+
+// items.forEach((item) => {
+//   item.addEventListener('click', (e) => {
+//     //console.log('item clicked');
+//     //console.log(e);
+//     //console.log(e.target);
+//     e.target.style.textDecoration = 'line-through';
+//   });
+// });
+
+// CREATING & REMOVING ELEMENTS FROM THE DOM
+const ul = document.querySelector('ul');
+//ul.remove();
+const button = document.querySelector('button');
 const items = document.querySelectorAll('li');
+
+button.addEventListener('click', () => {
+  const li = document.createElement('li');
+  li.textContent = 'Something New ToDo';
+  //ul.append(li);
+  ul.prepend(li);
+});
 
 items.forEach((item) => {
   item.addEventListener('click', (e) => {
-    //console.log('item clicked');
-    //console.log(e);
-    //console.log(e.target);
-    e.target.style.textDecoration = 'line-through';
+    //e.target.style.textDecoration = 'line-through';
+    e.target.remove();
   });
 });
