@@ -948,4 +948,15 @@
 //   console.log(e.pageX, e.pageY);
 // });
 
-// BUILD A POP UP
+// FORMS
+// SUBMIT EVENTS
+
+const form = document.querySelector('form');
+//const username = document.querySelector('#username');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  //console.log(username.value);
+  // quick way to get input data if they have a id or name attribute
+  console.log(form.username.value);
+});
