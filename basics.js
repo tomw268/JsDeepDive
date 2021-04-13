@@ -962,6 +962,7 @@
 // });
 
 // REGULAR EXPRESSIONS OR REGEX FOR SHORT
+//TESTING REGEX PATTERNS
 const form = document.querySelector('form');
 //const username = document.querySelector('#username');
 
@@ -971,3 +972,19 @@ form.addEventListener('submit', (e) => {
   // quick way to get input data if they have a id or name attribute
   console.log(form.username.value);
 });
+// testing RegEX
+const username = 'shaunp';
+const pattern = /^[a-z]{6,}$/;
+
+// let result = pattern.test(username);
+
+// console.log(result);
+
+// if (result) {
+//   console.log('the regex test passed:)');
+// } else {
+//   console.log('Regex test faild :(');
+// }
+
+let result = username.search(pattern);
+console.log(result);
