@@ -963,28 +963,47 @@
 
 // REGULAR EXPRESSIONS OR REGEX FOR SHORT
 //TESTING REGEX PATTERNS
-const form = document.querySelector('form');
-//const username = document.querySelector('#username');
+// const form = document.querySelector('form');
+// //const username = document.querySelector('#username');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  //console.log(username.value);
-  // quick way to get input data if they have a id or name attribute
-  console.log(form.username.value);
-});
-// testing RegEX
-const username = 'shaunp';
-const pattern = /^[a-z]{6,}$/;
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   //console.log(username.value);
+//   // quick way to get input data if they have a id or name attribute
+//   console.log(form.username.value);
+// });
+// // testing RegEX
+// const username = 'shaunp';
+// const pattern = /^[a-z]{6,}$/;
 
-// let result = pattern.test(username);
+// // let result = pattern.test(username);
 
+// // console.log(result);
+
+// // if (result) {
+// //   console.log('the regex test passed:)');
+// // } else {
+// //   console.log('Regex test faild :(');
+// // }
+
+// let result = username.search(pattern);
 // console.log(result);
 
-// if (result) {
-//   console.log('the regex test passed:)');
-// } else {
-//   console.log('Regex test faild :(');
-// }
+/// BASIC FORM VALIDATION
+const form = document.querySelector('.signup-form');
+const feedback = document.querySelector('.feedback');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-let result = username.search(pattern);
-console.log(result);
+  // VALIDATION
+  const username = form.username.value;
+  const usernamePattern = /^[a-zA-Z]{6,12}$/;
+  if (usernamePattern.test(username)) {
+    // feedback good info
+    feedback.textContent = 'that username is valid';
+  } else {
+    // feedback help info
+    feedback.textContent =
+      'user name must contain letters only and be between 6 & 12 characters long';
+  }
+});
