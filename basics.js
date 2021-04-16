@@ -980,24 +980,44 @@
 
 // // console.log(result);
 
-// // if (result) {
-// //   console.log('the regex test passed:)');
-// // } else {
-// //   console.log('Regex test faild :(');
-// // }
+// // // if (result) {
+// // //   console.log('the regex test passed:)');
+// // // } else {
+// // //   console.log('Regex test faild :(');
+// // // }
 
-// let result = username.search(pattern);
-// console.log(result);
+// // let result = username.search(pattern);
+// // console.log(result);
 
-/// BASIC FORM VALIDATION
+// /// BASIC FORM VALIDATION
+// // const form = document.querySelector('.signup-form');
+// // const feedback = document.querySelector('.feedback');
+// // form.addEventListener('submit', (e) => {
+// //   e.preventDefault();
+
+// //   // VALIDATION
+// //   const username = form.username.value;
+// //   const usernamePattern = /^[a-zA-Z]{6,12}$/;
+// //   if (usernamePattern.test(username)) {
+// //     // feedback good info
+// //     feedback.textContent = 'that username is valid';
+// //   } else {
+// //     // feedback help info
+// //     feedback.textContent =
+// //       'user name must contain letters only and be between 6 & 12 characters long';
+// //   }
+// // });
+
+// // KEYBOARD EVENTS
 // const form = document.querySelector('.signup-form');
 // const feedback = document.querySelector('.feedback');
+// const usernamePattern = /^[a-zA-Z]{6,12}$/;
 // form.addEventListener('submit', (e) => {
 //   e.preventDefault();
 
 //   // VALIDATION
 //   const username = form.username.value;
-//   const usernamePattern = /^[a-zA-Z]{6,12}$/;
+
 //   if (usernamePattern.test(username)) {
 //     // feedback good info
 //     feedback.textContent = 'that username is valid';
@@ -1008,33 +1028,13 @@
 //   }
 // });
 
-// KEYBOARD EVENTS
-const form = document.querySelector('.signup-form');
-const feedback = document.querySelector('.feedback');
-const usernamePattern = /^[a-zA-Z]{6,12}$/;
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+// /// live feedback event listiner
 
-  // VALIDATION
-  const username = form.username.value;
-
-  if (usernamePattern.test(username)) {
-    // feedback good info
-    feedback.textContent = 'that username is valid';
-  } else {
-    // feedback help info
-    feedback.textContent =
-      'user name must contain letters only and be between 6 & 12 characters long';
-  }
-});
-
-/// live feedback event listiner
-
-form.username.addEventListener('keyup', (e) => {
-  //console.log(e.target.value, form.username.value);
-  if (usernamePattern.test(e.target.value)) {
-    form.username.setAttribute('class', 'success');
-  } else {
-    form.username.setAttribute('class', 'error');
-  }
-});
+// form.username.addEventListener('keyup', (e) => {
+//   //console.log(e.target.value, form.username.value);
+//   if (usernamePattern.test(e.target.value)) {
+//     form.username.setAttribute('class', 'success');
+//   } else {
+//     form.username.setAttribute('class', 'error');
+//   }
+// });
