@@ -21,9 +21,21 @@ form.addEventListener('submit', (e) => {
     }
   });
   // show result on page
+  // scrollTo takes an x,y argu
   scrollTo(0, 0);
-  result.querySelector('span').textContent = `${score}%`;
+
   result.classList.remove('d-none');
+
+  // score animation
+  let output = 0;
+  const timer = setInterval(() => {
+    result.querySelector('span').textContent = `${output}%`;
+    if (output === score) {
+      clearInterval(timer);
+    } else {
+      output++;
+    }
+  }, 10);
 });
 // windo object (global object)
 // setTimeout(() => {
