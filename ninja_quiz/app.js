@@ -1,4 +1,4 @@
-const correctAnswers = ['A', 'B', 'B', 'B'];
+const correctAnswers = ['A', 'B', 'B', 'B', 'B'];
 
 const result = document.querySelector('.result');
 
